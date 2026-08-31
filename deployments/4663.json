@@ -1,0 +1,8 @@
+{
+  "chainId": 4663,
+  "PonsV3Adapter": "0xd5f575a9d0c4270668ae595b7cbc05f75b75f1f0",
+  "BasketRouter": "0x302a9fa851ce31b5bcea4d6ee21dfb78d0bd16b5",
+  "BasketFactory": "0xa8498c29620794bf6a07a51ecedb6eefcabeca13",
+  "BasketFactoryStartBlock": 50554718,
+  "deploymentTransaction": "0x94cc4ee467cace46d2e938f88d0d480ee594ed0937c849dbec5f46d0f4a6f9c1"
+}
