@@ -214,7 +214,6 @@ a {
 }
 
 .live-section,
-.index-table-section,
 .composition-table,
 .step-block,
 .tx-panel,
@@ -222,9 +221,14 @@ a {
   border-top: 1px solid var(--hairline);
 }
 
-.section-head,
-.page-heading {
+.section-head {
   margin-bottom: 26px;
+}
+
+.page-heading {
+  margin-bottom: 64px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--hairline);
 }
 
 .feature-section {
@@ -268,10 +272,10 @@ a {
 
 .index-row {
   display: grid;
-  grid-template-columns: minmax(180px, 1.6fr) minmax(220px, 2fr) minmax(110px, 0.7fr) minmax(110px, 0.7fr);
+  grid-template-columns: minmax(200px, 1.8fr) minmax(220px, 2fr) minmax(120px, 0.8fr) minmax(130px, 0.8fr);
   align-items: center;
-  gap: 24px;
-  min-height: 72px;
+  gap: 32px;
+  min-height: 92px;
   border-bottom: 1px solid var(--hairline);
   color: var(--muted);
   font-size: 13px;
@@ -280,11 +284,11 @@ a {
 }
 
 a.index-row:hover {
-  background: rgba(12, 12, 11, 0.025);
+  background: rgba(12, 12, 11, 0.03);
 }
 
 .index-head {
-  min-height: 44px;
+  min-height: 48px;
   color: var(--muted);
   font-size: 10px;
   font-weight: 750;
@@ -295,12 +299,32 @@ a.index-row:hover {
 .index-components {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+
+.index-token-chips {
+  display: flex;
+  flex-wrap: wrap;
   gap: 6px;
+}
+
+.index-token-chip {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 8px;
+  border: 1px solid var(--hairline);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  background: var(--paper-raised);
 }
 
 .index-primary strong {
   color: var(--ink);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 650;
 }
 
@@ -348,20 +372,20 @@ a.index-row:hover {
 .form-grid input,
 .field input {
   width: 100%;
-  min-height: 46px;
+  min-height: 52px;
   border: 1px solid var(--hairline);
-  border-radius: 2px;
+  border-radius: 6px;
   background: var(--paper-raised);
   color: var(--ink);
-  padding: 0 14px;
+  padding: 0 18px;
   outline: none;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .search-input {
-  font-size: 14px;
-  min-height: 46px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  min-height: 52px;
+  margin-bottom: 32px;
 }
 
 .search-input:focus,
