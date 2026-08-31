@@ -3,7 +3,10 @@ type Segment = {
   weightBps: number;
 };
 
-const shades = ["#0b0b0a", "#3b3935", "#625f58", "#8c877e", "#b8b1a6", "#d6d0c7"];
+const COLORS = [
+  "#22c55e", "#3b82f6", "#f59e0b", "#ef4444", "#8b5cf6",
+  "#06b6d4", "#f97316", "#84cc16", "#ec4899", "#14b8a6"
+];
 
 export function CompositionStrip({ segments }: { segments: Segment[] }) {
   if (segments.length === 0) return <div className="composition-strip composition-empty" />;
@@ -16,7 +19,7 @@ export function CompositionStrip({ segments }: { segments: Segment[] }) {
           className="composition-segment"
           style={{
             width: `${segment.weightBps / 100}%`,
-            background: shades[index % shades.length]
+            background: COLORS[index % COLORS.length]
           }}
           title={`${segment.label} ${(segment.weightBps / 100).toFixed(2)}%`}
         />
@@ -24,4 +27,3 @@ export function CompositionStrip({ segments }: { segments: Segment[] }) {
     </div>
   );
 }
-

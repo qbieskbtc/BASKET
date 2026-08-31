@@ -8,6 +8,7 @@ export function Navigation() {
       <Link href="/" className="brand" aria-label="BASKET home">
         <Image src="/basket-logo.png" alt="" width={28} height={28} className="brand-mark" priority />
         <span>BASKET</span>
+        <span className="nav-chain" style={{ marginLeft: 4 }}>PONS</span>
       </Link>
       <nav className="nav-links" aria-label="Primary">
         <Link href="/explore">Explore</Link>
@@ -18,4 +19,3 @@ export function Navigation() {
     </header>
   );
 }
-
