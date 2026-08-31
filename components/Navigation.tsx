@@ -5,10 +5,9 @@ import { WalletButton } from "@/components/web3/WalletButton";
 export function Navigation() {
   return (
     <header className="nav">
-      <Link href="/" className="brand" aria-label="BASKET home">
-        <Image src="/basket-logo.png" alt="" width={28} height={28} className="brand-mark" priority />
-        <span>BASKET</span>
-        <span className="nav-chain" style={{ marginLeft: 4 }}>PONS</span>
+      <Link href="/" className="brand" aria-label="Pawn home">
+        <Image src="/pawn-logo.png" alt="" width={22} height={22} className="brand-mark" priority />
+        <span>Pawn</span>
       </Link>
       <nav className="nav-links" aria-label="Primary">
         <Link href="/explore">Explore</Link>

@@ -6,8 +6,8 @@ export function Footer() {
       <div className="page" style={{ paddingBottom: 0 }}>
         <div className="footer-inner">
           <div className="footer-left">
-            <span className="footer-brand">BASKET</span>
-            <span className="footer-tagline">Permissionless index funds for PONS tokens.</span>
+            <span className="footer-brand">Pawn</span>
+            <span className="footer-tagline">Permissionless indexes on Robinhood Chain.</span>
           </div>
           <div className="footer-right">
             <span>Powered by</span>
@@ -15,9 +15,9 @@ export function Footer() {
               PONS Protocol
             </a>
             <span style={{ color: "var(--hairline-strong)" }}>·</span>
-            <span>Robinhood Chain</span>
-            <span style={{ color: "var(--hairline-strong)" }}>·</span>
             <Link href="/docs">Docs</Link>
+            <span style={{ color: "var(--hairline-strong)" }}>·</span>
+            <Link href="/explore">Explore</Link>
           </div>
         </div>
       </div>

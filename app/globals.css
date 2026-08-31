@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --paper: #f9f9f7;
+  --paper: #f4f1ea;
   --paper-raised: #ffffff;
-  --ink: #0c0c0b;
-  --muted: #737373;
-  --hairline: #e6e6e3;
-  --hairline-strong: #d0d0cc;
-  --green: #16a34a;
-  --green-bg: #f0fdf4;
+  --ink: #0f0e0c;
+  --muted: #6e6b62;
+  --hairline: #e4e0d6;
+  --hairline-strong: #ccc8bd;
+  --gold: #b5924c;
+  --gold-light: #f8f3e8;
 }
 
 * {
@@ -104,7 +104,7 @@ a {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #16a34a;
+  background: var(--gold);
   content: "";
 }
 
@@ -544,7 +544,7 @@ a.index-row:hover {
 }
 
 .route-good::before {
-  background: #1f6b3b;
+  background: var(--gold);
 }
 
 .route-muted::before {
@@ -666,11 +666,11 @@ a.index-row:hover {
   align-items: center;
   gap: 8px;
   padding: 10px 14px;
-  background: var(--green-bg);
-  border: 1px solid #bbf7d0;
+  background: var(--gold-light);
+  border: 1px solid #e8d5a8;
   border-radius: 4px;
   font-size: 12px;
-  color: #166534;
+  color: #7a5c1e;
   font-weight: 600;
 }
 

@@ -6,8 +6,8 @@ import { Providers } from "@/components/web3/Providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Basket — PONS Index Protocol",
-  description: "Permissionless onchain index funds for PONS-launched tokens on Robinhood Chain."
+  title: "Pawn — Permissionless Onchain Indexes",
+  description: "Build and own permissionless onchain indexes of PONS-launched tokens on Robinhood Chain."
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

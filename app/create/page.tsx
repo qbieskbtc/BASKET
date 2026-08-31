@@ -5,8 +5,8 @@ export default function CreatePage() {
     <div className="page compact-page">
       <section className="page-heading">
         <p className="eyebrow">CREATE AN INDEX</p>
-        <h1>Build a PONS index.</h1>
-        <p>Choose any PONS-launched tokens, set their weights, and deploy an onchain index fund in minutes. Only tokens from the PONS protocol on Robinhood Chain are supported.</p>
+        <h1>Build your position.</h1>
+        <p>Choose the pawns. Set the weights. Own the index.</p>
       </section>
       <CreateClient />
     </div>

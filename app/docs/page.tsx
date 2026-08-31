@@ -3,13 +3,13 @@ export default function DocsPage() {
     <div className="page compact-page">
       <section className="page-heading">
         <p className="eyebrow">DOCS</p>
-        <h1>How Basket works.</h1>
-        <p>Basket is permissionless index infrastructure for PONS tokens, deployed on Robinhood Chain.</p>
+        <h1>How Pawn works.</h1>
+        <p>Pawn is permissionless index infrastructure for PONS tokens, deployed on Robinhood Chain.</p>
       </section>
       <div className="docs-grid">
         <div className="doc-link">
           <span>ARCHITECTURE</span>
-          <strong>BasketVault holds components. BasketFactory deploys vaults. BasketRouter handles ETH routing.</strong>
+          <strong>The index vault holds components. A factory deploys vaults. A router handles ETH routing.</strong>
         </div>
         <div className="doc-link">
           <span>PONS INTEGRATION</span>

@@ -236,8 +236,8 @@ function NavChart({
         width: container.clientWidth,
         height: 280,
         layout: {
-          background: { type: ColorType.Solid, color: "#f7f4ef" },
-          textColor: "#6d6a63",
+          background: { type: ColorType.Solid, color: "#f4f1ea" },
+          textColor: "#6e6b62",
           fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif",
           fontSize: 11,
         },
@@ -509,7 +509,7 @@ export function BasketDetailClient({ address }: { address: Address }) {
         if (!contractAddresses.basketRouter) throw new Error("BasketRouter not configured.");
         const sharesWei = safeParseEther(sharesAmount);
         if (sharesWei === 0n) throw new Error("Enter a shares amount.");
-        if (basket.totalSupplyRaw === 0n) throw new Error("Basket has no supply.");
+        if (basket.totalSupplyRaw === 0n) throw new Error("Index has no supply.");
 
         const fresh = await quoteSell(basket, sharesWei);
 
@@ -686,7 +686,7 @@ export function BasketDetailClient({ address }: { address: Address }) {
 
           {/* Composition */}
           <div className="composition-table">
-            <p className="eyebrow" style={{ padding: "18px 0 4px" }}>COMPOSITION</p>
+            <p className="eyebrow" style={{ padding: "18px 0 4px" }}>INDEX COMPOSITION</p>
             <CompositionStrip components={basket.components} />
             <div className="composition-row composition-head">
               <span>ASSET</span>
@@ -851,14 +851,14 @@ export function BasketDetailClient({ address }: { address: Address }) {
               </span>
             )}
             {txState === "confirmed" && txHash && (
-              <span style={{ color: "#1f6b3b" }}>
+              <span style={{ color: "var(--gold)" }}>
                 Confirmed —{" "}
                 <a
                   href={`${BLOCKSCOUT_BASE}/tx/${txHash}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="address-link"
-                  style={{ color: "#1f6b3b" }}
+                  style={{ color: "var(--gold)" }}
                 >
                   view tx
                 </a>

@@ -145,7 +145,7 @@ export function CreateClient() {
     if (!hasName) return "Enter an index name";
     if (!hasSymbol) return "Enter a ticker";
     if (!tokenCountValid)
-      return selected.length < 2 ? "Add at least 2 assets" : "Maximum 10 assets";
+      return selected.length < 2 ? "Add at least 2 pawns" : "Maximum 10 pawns";
     if (isCheckingRoutes) return null;
     if (!allRoutesSupported) {
       const unsupported = selected.find((t) => tokenResolutions.get(t)?.swapSupported === false);
@@ -223,7 +223,7 @@ export function CreateClient() {
       <section className="create-main">
         <div className="step-block">
           <p className="eyebrow">STEP 01</p>
-          <h2>SELECT ASSETS</h2>
+          <h2>SELECT PAWNS</h2>
           <TokenSelector selected={selected} weights={weights} onChange={setSelected} />
         </div>
         <div className="step-block">
@@ -249,7 +249,7 @@ export function CreateClient() {
 
       <TransactionPanel title="REVIEW" state={txState} error={error} hash={hash}>
         <div className="review-list">
-          <span>Assets</span>
+          <span>Pawns</span>
           <strong>{selected.length || "—"}</strong>
           <span>Total</span>
           <strong>{(totalWeight / 100).toFixed(2)}%</strong>
