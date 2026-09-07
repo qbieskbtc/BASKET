@@ -14,6 +14,38 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="pawn-token-section">
+        <div className="pawn-token-inner">
+          <div className="pawn-token-text">
+            <p className="eyebrow">OFFICIAL TOKEN — LIVE NOW ON ROBINHOOD CHAIN</p>
+            <h2>$PAWN is live.</h2>
+            <p>The native token of the Pawn ecosystem, launched on PONS. Trade it, hold it, or build an index around it.</p>
+            <div className="pawn-address-row">
+              <span className="pawn-address-label">CONTRACT</span>
+              <a
+                href="https://robinhoodchain.blockscout.com/token/0x8d4DB600428cc38848626C7921687023274E4293"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pawn-address-value address-link"
+              >
+                0x8d4DB600428cc38848626C7921687023274E4293
+              </a>
+            </div>
+          </div>
+          <div className="pawn-token-actions">
+            <a
+              href="https://robinhoodchain.blockscout.com/token/0x8d4DB600428cc38848626C7921687023274E4293"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button button-dark"
+            >
+              VIEW $PAWN ↗
+            </a>
+            <Link href="/create" className="button button-light">BUILD AN INDEX</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="feature-section">
         <div className="feature-grid">
           <div className="feature-card">
