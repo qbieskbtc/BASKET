@@ -13,6 +13,14 @@ export function Navigation() {
         <Link href="/explore">Explore</Link>
         <Link href="/create">Create</Link>
         <Link href="/docs">Docs</Link>
+        <a
+          href="https://robinhoodchain.blockscout.com/token/0xedD3132FB9aC24438e066B767E16638E22236036"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-pawn-badge"
+        >
+          $PAWN
+        </a>
       </nav>
       <WalletButton />
     </header>

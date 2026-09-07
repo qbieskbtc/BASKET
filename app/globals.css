@@ -859,6 +859,197 @@ a.index-row:hover {
   font-size: 13px;
 }
 
+/* ─── $PAWN token ────────────────────────────────────────────────────────── */
+
+.announce-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 24px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
+.announce-live {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  flex-shrink: 0;
+  animation: pulse-live 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.announce-link {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  opacity: 0.88;
+}
+
+.announce-link:hover {
+  opacity: 1;
+}
+
+.nav-pawn-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border: 1px solid var(--gold);
+  border-radius: 100px;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  color: var(--gold) !important;
+  transition: background 160ms;
+}
+
+.nav-pawn-badge::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: pulse-live 1.8s ease-in-out infinite;
+}
+
+.nav-pawn-badge:hover {
+  background: var(--gold-light);
+}
+
+.pawn-token-section {
+  border-top: 1px solid var(--hairline);
+  padding: 64px 0;
+}
+
+.pawn-token-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 40px;
+  background: var(--gold-light);
+  border: 1px solid #e8d5a8;
+  border-radius: 6px;
+}
+
+.pawn-token-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.pawn-token-text h2 {
+  margin: 0 0 12px;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.pawn-token-text p {
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.pawn-address-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pawn-address-label {
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  color: #7a5c1e;
+}
+
+.pawn-address-value {
+  font-size: 13px;
+  font-family: ui-monospace, "SF Mono", monospace;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.pawn-token-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+  min-width: 200px;
+}
+
+.pawn-featured-token {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+  background: var(--gold-light);
+  border: 1px solid #e8d5a8;
+  border-radius: 4px;
+}
+
+.pawn-featured-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pawn-featured-live {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  animation: pulse-live 1.8s ease-in-out infinite;
+}
+
+.pawn-featured-name {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.pawn-featured-sep {
+  color: var(--hairline-strong);
+}
+
+.pawn-featured-desc {
+  font-size: 12px;
+  color: #7a5c1e;
+}
+
+.pawn-featured-link {
+  font-size: 12px;
+  font-family: ui-monospace, "SF Mono", monospace;
+  color: #7a5c1e;
+}
+
 .site-footer {
   border-top: 1px solid var(--hairline);
   padding: 28px 0;
