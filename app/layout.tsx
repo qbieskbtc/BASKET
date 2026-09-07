@@ -15,6 +15,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body>
         <Providers>
+          <div className="announce-bar">
+            <span className="announce-live" />
+            <span>$PAWN token is now live on Robinhood Chain.</span>
+            <a
+              href="https://robinhoodchain.blockscout.com/token/0x00EAa959184dD7E8791db5f544Ef87387690E98c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="announce-link"
+            >
+              0x00EAa…E98c ↗
+            </a>
+          </div>
           <Navigation />
           <main>{children}</main>
           <Footer />
